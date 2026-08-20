@@ -64,15 +64,6 @@ Lifecycle Monitor + KPI telemetry
 | `engine.py` | SignalMesh, SEC-Ω, Grants.gov scout, compiler, monitor |
 | `app.py`    | FastAPI routes + Gradio UI                          |
 
-## SignalMesh integration
-
-AutoGrantED is designed to interoperate with the standalone SignalMesh runtime:
-
-- https://github.com/Ig0tU/signalmesh  
-- https://huggingface.co/spaces/acecalisto3/signalmesh  
-- https://kyklos.io (Antennae Model / Spatial Signal Indexing)
-
-Agents subscribe to frequency bands (`#opp-raw`, `#grant-active`, `#draft-review`, `#pkg-ready`, …). Context is hydrated **before** inference, cutting token spend by ~96 %.
 
 ## Example SEC-Ω rules enforced
 

@@ -280,14 +280,7 @@ def gui_mesh_clear():
 # Gradio Blocks
 # ---------------------------------------------------------------------------
 
-with gr.Blocks(
-    title="AutoGrantED · SignalMesh Orchestrator",
-    theme=gr.themes.Soft(primary_hue="indigo", secondary_hue="slate"),
-    css="""
-    .gradio-container { max-width: 1100px !important; }
-    footer { visibility: hidden; }
-    """,
-) as demo:
+with gr.Blocks(title="AutoGrantED · SignalMesh Orchestrator") as demo:
     gr.Markdown(
         """
         # AutoGrantED

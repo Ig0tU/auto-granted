@@ -15,3 +15,15 @@ exports/
 *.egg-info/
 dist/
 build/
+
+# Secrets & local profiles – never commit
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.key
+credentials/local/
+.autogranted/
+profiles/org_profile.json
+!profiles/org_profile.example.json

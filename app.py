@@ -1,12 +1,8 @@
-"""
-AutoGrantED entrypoint — FastAPI + Gradio + Ollama Cloud
-"""
+"""AutoGrantED entrypoint."""
 from __future__ import annotations
-
 import os
-
-from ui_pipeline import app, demo
 import gradio as gr
+from pipeline import app, demo
 
 app = gr.mount_gradio_app(app, demo, path="/")
 

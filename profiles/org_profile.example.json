@@ -1,0 +1,22 @@
+{
+  "legal_name": "Example Research Institute",
+  "uei": "REPLACE_WITH_REAL_UEI",
+  "cage_code": "",
+  "ein_last4": "",
+  "address_line1": "123 Science Way",
+  "address_city": "Cambridge",
+  "address_state": "MA",
+  "address_zip": "02139",
+  "address_country": "USA",
+  "ebiz_poc_email": "ebiz@example.edu",
+  "aor_name": "Jane Doe",
+  "aor_email": "jane.doe@example.edu",
+  "aor_title": "Authorized Organizational Representative",
+  "institution_type": "University",
+  "naics_codes": ["541715"],
+  "research_areas": ["artificial intelligence", "machine learning", "robotics"],
+  "facilities_summary": "Shared GPU cluster, robotics lab, secure data enclave.",
+  "prior_awards_summary": "List relevant prior federal awards here.",
+  "default_budget_indirect_rate": 0.55,
+  "notes": "Copy to ~/.autogranted/org_profile.json and fill real values. Never commit real UEI/PII if the repo is public."
+}

@@ -96,7 +96,10 @@ class AutomationSuite:
 
     def discover(self, keyword: str = "", rows: int = 25) -> List[Dict[str, Any]]:
         from engine import scout
-        return scout.search(keyword=keyword, rows=rows)
+        hits = scout.fetch(keywords=keyword or "artificial intelligence", rows=rows)
+        if not hits:
+            hits = scout.fallback_hits(keyword or "artificial intelligence")
+        return hits
 
     def draft(
         self,
@@ -216,10 +219,10 @@ class AutomationSuite:
         def esc(s: str) -> str:
             return (
                 (s or "")
-                .replace("&", "&amp;")
-                .replace("<", "&lt;")
-                .replace(">", "&gt;")
-                .replace('"', "&quot;")
+                .replace("&", "&")
+                .replace("<", "<")
+                .replace(">", ">")
+                .replace('"', """)
             )
 
         return f"""<?xml version=\"1.0\" encoding=\"UTF-8\"?>

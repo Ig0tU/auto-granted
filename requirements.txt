@@ -7,3 +7,6 @@ pydantic>=2.8.0
 python-docx>=1.1.2
 python-multipart>=0.0.9
 uvicorn[standard]>=0.30.0
+# Optional – only needed for live Grants.gov S2S submit
+zeep>=4.2.0
+requests>=2.32.0
